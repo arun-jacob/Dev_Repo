@@ -1,3 +1,5 @@
+#Insert Single
+
 db.post.insert({
     title:"Post One",
     body:"Body of post one",
@@ -10,6 +12,8 @@ db.post.insert({
     },
     date: Date()
 })
+
+#Insert Many
 
 db.post.insertMany([
     {
@@ -37,4 +41,15 @@ db.post.insertMany([
         date:Date()
     }
 ]
+)
+
+#Update
+
+db.post.update({title:"Post One"},
+{
+        title:"Post One",
+        body:"Body of post one",
+        category:"News",
+        date:Date()
+    }
 )
